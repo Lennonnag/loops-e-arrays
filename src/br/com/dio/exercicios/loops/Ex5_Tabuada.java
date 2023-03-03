@@ -18,13 +18,15 @@ public class Ex5_Tabuada {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Tabuada: ");
-        int tabuada = scan.nextInt();
+        int numero;
 
-        System.out.println("Tabuada de " + tabuada);
-        for(int i = 1; i <= 10; i = i + 1) {
-            System.out.println(tabuada + " X " + i + " = " + (tabuada*i));
+        System.out.print("Digite um valor de 1 a 10: ");
+        numero = scan.nextInt();
+
+        for (int x = 1; x <= 10; x++) {
+            System.out.println(numero + " x " + x + " = " + numero * x);
         }
+
     }
 
 }

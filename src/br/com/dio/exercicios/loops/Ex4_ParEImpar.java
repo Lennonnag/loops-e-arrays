@@ -10,26 +10,22 @@ e a quantidade de números impares.
 public class Ex4_ParEImpar {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
-        int quantNumeros;
+        int quantidade;
         int numero;
-        int quantPares = 0, quantImpares = 0;
-
-        System.out.println("Quantidade de números: ");
-        quantNumeros = scan.nextInt();
-
-        int count = 0;
+        int pares=0;
+        int impares=0;
+        System.out.print("Digite a quantidade de numeros: ");
+        quantidade = scan.nextInt();
         do {
-            System.out.println("Número: ");
+            System.out.print("Numero: ");
             numero = scan.nextInt();
-
-            if (numero % 2 == 0 ) quantPares++;
-            else quantImpares++;
-
-            count++;
-        } while(count < quantNumeros);
-
-        System.out.println("Quantidade Par: " + quantPares);
-        System.out.println("Quantidade Ímpar: " + quantImpares);
+            if (numero % 2 == 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+            quantidade--;
+        } while (quantidade > 0);
+        System.out.println("Foram digitados: " + pares + " pares e " + impares + " impares");
     }
 }
